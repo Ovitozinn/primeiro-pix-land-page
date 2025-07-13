@@ -161,7 +161,7 @@ const LandingPage = () => {
         <section className="mb-16">
           <div className="aspect-video w-full rounded-lg overflow-hidden mb-4">
             <iframe
-              src="https://www.loom.com/embed/b984d14da64e46edb6afa46ced75f802"
+              src="https://youtu.be/baA7GrhEOVk"
               title="VSL – Primeiro Contrato"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
