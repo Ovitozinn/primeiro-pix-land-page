@@ -159,9 +159,9 @@ const LandingPage = () => {
         
         {/* BLOCO DE VÍDEO (VSL) */}
         <section className="mb-16">
-          <div className="aspect-video w-full rounded-lg overflow-hidden mb-4">
+<div className="aspect-video w-full rounded-lg overflow-hidden mb-4">
   <iframe
-    src="https://www.youtube.com/embed/baA7GrhEOVk?rel=0&modestbranding=1"
+    src="https://www.youtube.com/embed/NNtA2ybXECo?rel=0&modestbranding=1"
     title="VSL – Primeiro Contrato"
     frameBorder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -169,6 +169,7 @@ const LandingPage = () => {
     className="w-full h-full"
   ></iframe>
 </div>
+
           <p className="text-center font-bold">
             ▶ Clique para assistir à VSL e destravar seu primeiro contrato (5 min)
           </p>
