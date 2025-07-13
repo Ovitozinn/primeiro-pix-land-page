@@ -133,14 +133,14 @@ const LandingPage = () => {
             <div className="my-8">
               <h3 className="font-bold text-lg mb-4">Troco de Padaria Agora ou Preço de Luxo Depois</h3>
               <p>Investimento total: R$ 300,00</p>
-              <p className="font-bold">Investimento da primeira turma: R$ 147,00</p>
-              <p className="mt-2">Quem entrar agora recebe exatamente o que futuramente será vendido mais caro — e ainda leva mentoria individual no meio do caminho.</p>
+              <p className="font-bold">Investimento da primeira turma: R$ 97,00</p>
+              <p className="mt-2">Quem entrar agora recebe exatamente o que futuramente será vendido mais caro — e ainda leva mentoria no meio do caminho.</p>
             </div>
             
             <div className="my-8">
               <h3 className="font-bold text-lg mb-4">💎 Garanta seu acesso!</h3>
-              <p>Metade do mapa já é sua.</p>
-              <p>A porta continua trancada até você,</p>
+              <p>Metade do mapa já é seu.</p>
+              <p>A porta continua trancada até você garantir seu acesso!</p>
             </div>
             
             {/* CTA BUTTON */}
