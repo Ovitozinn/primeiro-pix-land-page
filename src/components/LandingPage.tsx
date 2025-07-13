@@ -170,7 +170,7 @@ const LandingPage = () => {
            ></iframe>
           </div>
           <p className="text-center font-bold">
-            ▶ Clique para assistir à VSL e destravar seu primeiro contrato (2 min)
+            ▶ Clique para assistir à VSL e destravar seu primeiro contrato (5 min)
           </p>
         </section>
         
