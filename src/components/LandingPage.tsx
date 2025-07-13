@@ -147,7 +147,7 @@ const LandingPage = () => {
             <div className="my-8">
               <Button 
                 className="w-full h-14 text-lg font-semibold bg-landing-cta hover:bg-landing-cta/90 text-white rounded-md transition-colors"
-                onClick={() => window.open('https://pay.kiwify.com.br/c8eywu5', '_blank')}
+                onClick={() => window.open('https://pay.hub.la/58gUhZ4eDfD8QtTZzgdk', '_blank')}
               >
                 Quero fechar meu primeiro contrato
               </Button>
@@ -159,12 +159,15 @@ const LandingPage = () => {
         
         {/* BLOCO DE VÍDEO (VSL) */}
         <section className="mb-16">
-          <div className="aspect-video bg-gray-900 rounded-lg flex items-center justify-center mb-4">
-            <div className="text-center text-white">
-              <Play className="mx-auto mb-4 h-16 w-16 opacity-80" />
-              <p className="text-lg">Vídeo de Vendas</p>
-              <p className="text-sm opacity-80">Clique para assistir</p>
-            </div>
+          <div className="aspect-video w-full rounded-lg overflow-hidden mb-4">
+            <iframe
+              src="https://www.loom.com/embed/b984d14da64e46edb6afa46ced75f802"
+              title="VSL – Primeiro Contrato"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+             className="w-full h-full"
+           ></iframe>
           </div>
           <p className="text-center font-bold">
             ▶ Clique para assistir à VSL e destravar seu primeiro contrato (2 min)
@@ -229,7 +232,7 @@ const LandingPage = () => {
         <section className="mb-16">
           <Button 
             className="w-full h-14 text-lg font-semibold bg-landing-cta hover:bg-landing-cta/90 text-white rounded-md transition-colors"
-            onClick={() => window.open('https://pay.kiwify.com.br/c8eywu5', '_blank')}
+            onClick={() => window.open('https://pay.hub.la/58gUhZ4eDfD8QtTZzgdk', '_blank')}
           >
             Quero fechar meu primeiro contrato
           </Button>
