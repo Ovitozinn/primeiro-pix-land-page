@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Play } from 'lucide-react';
 
 const LandingPage = () => {
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const pageHeight = document.body.scrollHeight - window.innerHeight;
+      const scrollTop = window.scrollY;
+      const progressPerc = (scrollTop / pageHeight) * 100;
+      setScrollProgress(Math.min(100, Math.max(0, progressPerc)));
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
     <div className="min-h-screen bg-landing-bg">
       <div className="max-w-[960px] mx-auto px-6 py-12">
@@ -158,40 +171,58 @@ const LandingPage = () => {
           </p>
         </section>
         
-        {/* SUMÁRIO PODEROSO */}
+        {/* GAMIFIED TIMELINE SECTION */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-8 text-center">Plano de Ataque – 15 Dias até o PIX</h2>
-          
-          <div className="space-y-6">
-            {[
-              "Boas-Vindas & Mentalidade de Vendas",
-              "Escolha de Nicho + Compromisso Público",
-              "Lista-Builder: empresas do seu nicho em minutos",
-              "Oferta Magnética validada ao vivo",
-              "Scripts de Prospecção (e-mail, DM, VIP)",
-              "Follow-Up que Vende (exemplos prontos)",
-              "Aprimoramento & Correções de Rota",
-              "Aula Cirúrgica Q&A: todas as dúvidas resolvidas",
-              "Diagnóstico Pré-Call (planilha + perguntas)",
-              "Call Matadora: adeus \"vou pensar\"",
-              "Proposta Assassin's Creed (template + preço)",
-              "Fechamento & Contrato Plug-and-Play",
-              "Alinhamento de Expectativas & Upsell",
-              "MVP que Dobra Conversão em 48 h",
-              "Live Final + Próximos Passos e Bônus"
-            ].map((item, index) => (
-              <div key={index} className="flex items-start gap-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-landing-cta text-white rounded-full flex items-center justify-center text-sm font-bold">
-                  {String(index + 1).padStart(2, '0')}
-                </div>
-                <div className="pt-1">
-                  <p className="text-lg leading-relaxed">
-                    Dia {String(index + 1).padStart(2, '0')} – {item}
-                  </p>
-                </div>
-              </div>
-            ))}
+          {/* Título */}
+          <h2 className="text-center font-extrabold text-2xl sm:text-3xl mb-10">
+            Plano de Ataque – 15 Dias até o PIX
+          </h2>
+
+          {/* Barra de Progresso */}
+          <div className="w-full bg-gray-300 rounded-full h-2 mb-14 sticky top-4 z-20">
+            <div 
+              className="h-2 rounded-full bg-landing-cta transition-all duration-300"
+              style={{ width: `${scrollProgress}%` }}
+            ></div>
           </div>
+
+          {/* LISTA DE DIAS */}
+          <ul className="space-y-8">
+            {[
+              {num:'01', titulo:'Boas-Vindas & Mentalidade de Vendas 🎯', desc:'Domine a cabeça do closer antes de qualquer script.'},
+              {num:'02', titulo:'Escolha de Nicho + Compromisso Público 🧭', desc:'Selecione o alvo certo e anuncie pra não voltar atrás.'},
+              {num:'03', titulo:'Lista-Builder: empresas do seu nicho em minutos 📂', desc:'Ferramentas ninja pra sair com 50 leads qualificados.'},
+              {num:'04', titulo:'Oferta Magnética validada ao vivo 💣', desc:'Crie a isca que faz o prospecto implorar pela call.'},
+              {num:'05', titulo:'Scripts de Prospecção (e-mail, DM, VIP) ✉️', desc:'Copie e cole mensagens que pingam PIX.'},
+              {num:'06', titulo:'Follow-Up que Vende (exemplos prontos) 🔁', desc:'Nunca mais perder lead no "vou pensar".'},
+              {num:'07', titulo:'Aprimoramento & Correções de Rota 🔧', desc:'Refina oferta + lista antes de entrar em campo.'},
+              {num:'08', titulo:'Aula Cirúrgica Q&A: todas as dúvidas resolvidas 🩺', desc:'Mentoria coletiva pra tirar qualquer pedra do caminho.'},
+              {num:'09', titulo:'Diagnóstico Pré-Call (planilha + perguntas) 📝', desc:'Chegue na reunião sabendo onde dói – e quanto custa.'},
+              {num:'10', titulo:'Call Matadora: adeus "vou pensar" ☎️', desc:'Técnicas de urgência ética pra fechar na hora.'},
+              {num:'11', titulo:'Proposta Assassin\'s Creed (template + preço) 📜', desc:'Modelo de PDF FOMO pronto pra enviar.'},
+              {num:'12', titulo:'Fechamento & Contrato Plug-and-Play 🤝', desc:'Roteiro + contrato pra selar o acordo sem dor de cabeça.'},
+              {num:'13', titulo:'Alinhamento de Expectativas & Upsell 📈', desc:'Prepare terreno pra entrega e venda recorrente.'},
+              {num:'14', titulo:'MVP que Dobra Conversão em 48h 🚀', desc:'Mini-projeto técnico pra mostrar valor em tempo recorde.'},
+              {num:'15', titulo:'Live Final + Próximos Passos e Bônus 🎉', desc:'Roadmap pra escalar acima dos 5 contratos.'}
+            ].map((aula, index) => (
+              <li key={index} className="flex items-start">
+                {/* Checkbox interativo */}
+                <input 
+                  type="checkbox" 
+                  className="mt-1 mr-3 accent-landing-cta w-5 h-5"
+                />
+                {/* Badge Numérico */}
+                <span className="w-9 h-9 flex items-center justify-center text-white bg-landing-cta rounded-full mr-4 font-bold">
+                  {aula.num}
+                </span>
+                {/* Conteúdo */}
+                <div>
+                  <h3 className="font-semibold">{aula.titulo}</h3>
+                  <p className="text-sm leading-relaxed">{aula.desc}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
         </section>
         
         {/* SEGUNDA CHAMADA PARA AÇÃO */}
