@@ -202,6 +202,10 @@ const LandingPage = () => {
               {
                 question: "5. Preciso largar meu trabalho pra fazer o curso?",
                 answer: "De jeito nenhum. 35 min por dia é o suficiente pra seguir o passo a passo e já começar a faturar no paralelo."
+              },
+              {
+                question: "6. Não tenho dinheiro para tráfego, funciona para mim?",
+                answer: "Sim, essa estratégia é pensada apenas em prospecção direta, sem gastar 1 centavo, encontrar os leads certos e transformá-los em clientes."
               }
             ].map((faq, index) => (
               <div key={index} className="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:shadow-landing-cta/20 transition-all duration-300 hover:border-landing-cta/30">
