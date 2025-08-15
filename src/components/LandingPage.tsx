@@ -36,11 +36,11 @@ const LandingPage = () => {
             <p>Mas só metade.</p>
             
             <p>
-              O resto das chaves — as que ligam o motor e explodem em contratos assinados — estão dentro do mini-curso. Leia até o fim, pegue o mapa e decida se quer abrir a porta ou continuar do lado de fora.
+              O resto das chaves — as que ligam o motor e explodem em contratos assinados — estão dentro do sistema de vendas. Leia até o fim, pegue o mapa e decida se quer abrir a porta ou continuar do lado de fora.
             </p>
             
             <div className="my-8">
-              <h3 className="font-bold text-lg mb-4">🫵 Para quem é esse mini - curso?</h3>
+              <h3 className="font-bold text-lg mb-4">🫵 Para quem é esse sistema de vendas?</h3>
               <ul className="space-y-2">
                 <li>Profissional no-code / n8n com fluxos lindos e conta bancária vazia.</li>
                 <li>Freelancer dev que vive ouvindo "manda proposta" e nunca recebe PIX.</li>
@@ -77,7 +77,7 @@ const LandingPage = () => {
             </div>
             
             <div className="my-8">
-              <h3 className="font-bold text-lg mb-4">🕸️A Armadilha: Por Que Você Vai Travar Sem o Mini-Curso</h3>
+              <h3 className="font-bold text-lg mb-4">🕸️A Armadilha: Por Que Você Vai Travar Sem o Sistema de Vendas</h3>
               
               <p className="font-semibold mb-3">Peças que Faltam</p>
               <p className="mb-3">Sem, isso acontece com você:</p>
