@@ -175,6 +175,56 @@ const LandingPage = () => {
           </p>
         </section>
         
+        {/* FAQ SECTION */}
+        <section className="mb-16">
+          <h2 className="text-center font-extrabold text-2xl sm:text-3xl mb-10">
+            📌 FAQ – Respostas Diretas pra Fechar Sua Decisão
+          </h2>
+          
+          <div className="space-y-4">
+            {[
+              {
+                question: "1. Não sei nada de automação. O que devo fazer?",
+                answer: "Simples: no momento da compra você pode adicionar o meu curso extra de automação do zero, onde eu mesmo te ensino, passo a passo, a criar suas primeiras automações. Zero experiência? Zero problema."
+              },
+              {
+                question: "2. Em quanto tempo vou fechar contrato?",
+                answer: "Se aplicar o método como ensino, você tem tudo pra fechar em até 15 dias. Sem enrolação, direto ao cliente e ao contrato."
+              },
+              {
+                question: "3. Esse valor de R$197 é todo mês?",
+                answer: "Não! É uma vez só. Paga hoje e recebe o acesso"
+              },
+              {
+                question: "4. E se eu não fechar contrato?",
+                answer: "Se você aplicar exatamente o que ensino e não fechar, eu mesmo vou te orientar até destravar sua primeira venda. Aqui não tem aluno perdido."
+              },
+              {
+                question: "5. Preciso largar meu trabalho pra fazer o curso?",
+                answer: "De jeito nenhum. 35 min por dia é o suficiente pra seguir o passo a passo e já começar a faturar no paralelo."
+              }
+            ].map((faq, index) => (
+              <div key={index} className="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:shadow-landing-cta/20 transition-all duration-300 hover:border-landing-cta/30">
+                <details className="group">
+                  <summary className="flex justify-between items-center p-4 cursor-pointer bg-gradient-to-r from-white to-gray-50 hover:from-landing-cta/5 hover:to-landing-cta/10 transition-all duration-300">
+                    <h3 className="font-semibold text-foreground group-hover:text-landing-cta transition-colors">
+                      {faq.question}
+                    </h3>
+                    <span className="text-landing-cta transform group-open:rotate-180 transition-transform duration-300 text-xl">
+                      ▼
+                    </span>
+                  </summary>
+                  <div className="p-4 pt-0 bg-white">
+                    <p className="text-foreground leading-relaxed">
+                      {faq.answer}
+                    </p>
+                  </div>
+                </details>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* GAMIFIED TIMELINE SECTION */}
         <section className="mb-16">
           {/* Título */}
