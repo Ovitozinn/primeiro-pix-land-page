@@ -36,11 +36,11 @@ const LandingPage = () => {
             <p>Mas só metade.</p>
             
             <p>
-              O resto das chaves — as que ligam o motor e explodem em contratos assinados — estão dentro do sistema de vendas. Leia até o fim, pegue o mapa e decida se quer abrir a porta ou continuar do lado de fora.
+              O resto das chaves — as que ligam o motor e explodem em contratos assinados — estão dentro do mini-curso. Leia até o fim, pegue o mapa e decida se quer abrir a porta ou continuar do lado de fora.
             </p>
             
             <div className="my-8">
-              <h3 className="font-bold text-lg mb-4">🫵 Para quem é esse sistema de vendas?</h3>
+              <h3 className="font-bold text-lg mb-4">🫵 Para quem é Sistema?</h3>
               <ul className="space-y-2">
                 <li>Profissional no-code / n8n com fluxos lindos e conta bancária vazia.</li>
                 <li>Freelancer dev que vive ouvindo "manda proposta" e nunca recebe PIX.</li>
@@ -77,7 +77,7 @@ const LandingPage = () => {
             </div>
             
             <div className="my-8">
-              <h3 className="font-bold text-lg mb-4">🕸️A Armadilha: Por Que Você Vai Travar Sem o Sistema de Vendas</h3>
+              <h3 className="font-bold text-lg mb-4">🕸️A Armadilha: Por Que Você Vai Travar Sem o Sistema de vendas?</h3>
               
               <p className="font-semibold mb-3">Peças que Faltam</p>
               <p className="mb-3">Sem, isso acontece com você:</p>
@@ -115,7 +115,7 @@ const LandingPage = () => {
               
               <ul className="space-y-2">
                 <li>Mais de 15 aulas direto‐ao-ponto (para você consultar quando precisar).</li>
-                <li>1 Aula Cirúrgica (dia 8) para quebrar todas as pedras que ficaram no caminho.</li>
+                <li>1 Aula Cirúrgica para quebrar todas as pedras que ficaram no caminho.</li>
                 <li>3 Documentos de Scripts Infalíveis — DM, planilha de custo e PDF FOMO prontos para copiar e colar.</li>
                 <li>Suporte direto comigo na plataforma pelos 15 dias + 25 dias de acompanhamento (para garantir que você fature pelo menos 5K com esse cursinho)</li>
               </ul>
@@ -132,9 +132,9 @@ const LandingPage = () => {
             
             <div className="my-8">
               <h3 className="font-bold text-lg mb-4">Troco de Padaria Agora ou Preço de Luxo Depois</h3>
-              <p>Investimento total: R$ 300,00</p>
-              <p className="font-bold">Investimento da primeira turma: R$ 97,00</p>
-              <p className="mt-2">Quem entrar agora recebe exatamente o que futuramente será vendido mais caro — e ainda leva mentoria no meio do caminho.</p>
+              <p>Investimento total: R$ 1.000,00</p>
+              <p className="font-bold">Investimento hoje: R$ 297,00</p>
+              <p className="mt-2">Quem entrar agora recebe exatamente o que futuramente será vendido mais caro — e ainda leva bônus no meio do caminho.</p>
             </div>
             
             <div className="my-8">
@@ -192,7 +192,7 @@ const LandingPage = () => {
                 answer: "Se aplicar o método como ensino, você tem tudo pra fechar em até 15 dias. Sem enrolação, direto ao cliente e ao contrato."
               },
               {
-                question: "3. Esse valor de R$197 é todo mês?",
+                question: "3. Esse valor de R$297 é todo mês?",
                 answer: "Não! É uma vez só. Paga hoje e recebe o acesso"
               },
               {
@@ -202,10 +202,6 @@ const LandingPage = () => {
               {
                 question: "5. Preciso largar meu trabalho pra fazer o curso?",
                 answer: "De jeito nenhum. 35 min por dia é o suficiente pra seguir o passo a passo e já começar a faturar no paralelo."
-              },
-              {
-                question: "6. Não tenho dinheiro para tráfego, funciona para mim?",
-                answer: "Sim, essa estratégia é pensada apenas em prospecção direta, sem gastar 1 centavo, encontrar os leads certos e transformá-los em clientes."
               }
             ].map((faq, index) => (
               <div key={index} className="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:shadow-landing-cta/20 transition-all duration-300 hover:border-landing-cta/30">
