@@ -30,7 +30,7 @@ const LandingPage = () => {
             </p>
             
             <p>
-              Porém é claro, você não vai fazer o que eu fiz no meu início, vou te dar a versão otimizada e validada por mais de 78 alunos e 12 mentorados que já fecharam seus primeiros contratos - apenas usando pelo menos 1 das estratégias que irei te passar - imagina se você juntar todas? É o que eu fiz mês passado e faturei mais de R$55 mil reais em 34 dias
+              Porém é claro, você não vai fazer o que eu fiz no meu início, vou te dar a versão otimizada e validada por mais de 78 alunos e 27 mentorados que já fecharam seus primeiros contratos - apenas usando pelo menos 1 das estratégias que irei te passar - imagina se você juntar todas? É o que eu fiz mês passado e faturei mais de R$55 mil reais em 34 dias
             </p>
             
             <p>Mas só metade.</p>
