@@ -27,7 +27,7 @@ const LandingPage = () => {
               <div className="flex items-center justify-center gap-3 mb-2">
                 <div className="text-4xl animate-pulse" style={{ animation: 'rotateY 3s linear infinite' }}>🔑</div>
                 <h1 className="font-extrabold text-3xl sm:text-4xl lg:text-5xl bg-gradient-to-r from-landing-cta to-landing-cta/70 bg-clip-text text-transparent">
-                  PARA DE ASSISTIR: ESTE DOC É A CHAVE DO SEU PRIMEIRO R$50.000
+                  PARA DE ASSISTIR: ESTE DOC É A CHAVE PARA FECHAR SEUS 5 PRIMEIROS CONTRATOS
                 </h1>
                 <div className="text-4xl animate-pulse" style={{ animation: 'rotateY 3s linear infinite' }}>🔑</div>
               </div>
