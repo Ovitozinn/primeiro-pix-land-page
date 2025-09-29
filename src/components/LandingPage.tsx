@@ -23,7 +23,15 @@ const LandingPage = () => {
         {/* HERO / COPY PRINCIPAL */}
         <section className="mb-16">
           <div className="text-base leading-relaxed text-foreground space-y-4">
-            <p className="font-bold text-lg">🔑PARA DE ASSISTIR: ESTE DOC É A CHAVE DO SEU PRIMEIRO R$ 10 K</p>
+            <div className="text-center mb-8">
+              <div className="flex items-center justify-center gap-3 mb-2">
+                <div className="animate-spin text-4xl">🔑</div>
+                <h1 className="font-extrabold text-3xl sm:text-4xl lg:text-5xl bg-gradient-to-r from-landing-cta to-landing-cta/70 bg-clip-text text-transparent">
+                  PARA DE ASSISTIR: ESTE DOC É A CHAVE DO SEU PRIMEIRO R$50.000
+                </h1>
+                <div className="animate-spin text-4xl">🔑</div>
+              </div>
+            </div>
             
             <p>
               Você está segurando metade do tesouro: o mesmo caminho que usei para fechar meus 5 primeiros clientes — sem gastar um centavo em tráfego, postar carrossel ou prometer "ROAS infinito".
@@ -132,8 +140,8 @@ const LandingPage = () => {
             
             <div className="my-8">
               <h3 className="font-bold text-lg mb-4">Troco de Padaria Agora ou Preço de Luxo Depois</h3>
-              <p>Investimento total: R$ 1.000,00</p>
-              <p className="font-bold">Investimento hoje: R$ 297,00</p>
+              <p>Investimento total: R$ 997,00</p>
+              <p className="font-bold">Investimento hoje: R$ 147,00</p>
               <p className="mt-2">Quem entrar agora recebe exatamente o que futuramente será vendido mais caro — e ainda leva bônus no meio do caminho.</p>
             </div>
             
