@@ -25,13 +25,20 @@ const LandingPage = () => {
           <div className="text-base leading-relaxed text-foreground space-y-4">
             <div className="text-center mb-8">
               <div className="flex items-center justify-center gap-3 mb-2">
-                <div className="animate-spin text-4xl">🔑</div>
+                <div className="text-4xl animate-pulse" style={{ animation: 'rotateY 3s linear infinite' }}>🔑</div>
                 <h1 className="font-extrabold text-3xl sm:text-4xl lg:text-5xl bg-gradient-to-r from-landing-cta to-landing-cta/70 bg-clip-text text-transparent">
                   PARA DE ASSISTIR: ESTE DOC É A CHAVE DO SEU PRIMEIRO R$50.000
                 </h1>
-                <div className="animate-spin text-4xl">🔑</div>
+                <div className="text-4xl animate-pulse" style={{ animation: 'rotateY 3s linear infinite' }}>🔑</div>
               </div>
             </div>
+
+            <style>{`
+              @keyframes rotateY {
+                from { transform: rotateY(0deg); }
+                to { transform: rotateY(360deg); }
+              }
+            `}</style>
             
             <p>
               Você está segurando metade do tesouro: o mesmo caminho que usei para fechar meus 5 primeiros clientes — sem gastar um centavo em tráfego, postar carrossel ou prometer "ROAS infinito".
